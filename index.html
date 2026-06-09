@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>🎓 LearnHub</h2>
+        </div>
+        <ul id="sidebar-menu">
+          <li class="active">Dashboard</li>
+          <li>Môn học</li>
+          <li>Bài tập</li>
+          <li>Kết quả học tập</li>
+          <li>Tài khoản</li>
+        </ul>
+      </aside>
+
+      <div class="main-wrapper">
+        <header class="header">
+          <div class="website-info">
+            <strong>Hệ thống Học tập Trực tuyến</strong>
+          </div>
+          <div class="user-info">
+            <span>Xin chào, <strong>[Họ Tên Bạn]</strong>!</span>
+            <img src="images/avatar.png" alt="Avatar" class="avatar" />
+          </div>
+        </header>
+
+        <main class="content-area">
+          <div class="left-col">
+            <h3>Danh sách môn học</h3>
+            <div id="course-grid" class="course-grid">
+              <div class="card">
+                <img src="images/course1.jpg" alt="HTML/CSS" />
+                <h4>HTML/CSS</h4>
+                <p>Tiến độ: 90%</p>
+                <button onclick="viewCourse('HTML/CSS', '90%')">Xem</button>
+              </div>
+              <div class="card">
+                <img src="images/course2.jpg" alt="JavaScript" />
+                <h4>JavaScript</h4>
+                <p>Tiến độ: 80%</p>
+                <button onclick="viewCourse('JavaScript', '80%')">Xem</button>
+              </div>
+              <div class="card">
+                <img src="images/course3.jpg" alt="PHP" />
+                <h4>PHP</h4>
+                <p>Tiến độ: 75%</p>
+                <button onclick="viewCourse('PHP', '75%')">Xem</button>
+              </div>
+              <div class="card">
+                <img src="images/course1.jpg" alt="MySQL" />
+                <h4>MySQL</h4>
+                <p>Tiến độ: 85%</p>
+                <button onclick="viewCourse('MySQL', '85%')">Xem</button>
+              </div>
+              <div class="card">
+                <img src="images/course2.jpg" alt="Laravel" />
+                <h4>Laravel</h4>
+                <p>Tiến độ: 60%</p>
+                <button onclick="viewCourse('Laravel', '60%')">Xem</button>
+              </div>
+              <div class="card">
+                <img src="images/course3.jpg" alt="AI Cơ bản" />
+                <h4>AI Cơ bản</h4>
+                <p>Tiến độ: 70%</p>
+                <button onclick="viewCourse('AI Cơ bản', '70%')">Xem</button>
+              </div>
+            </div>
+
+            <h3>Thống kê học tập</h3>
+            <div class="stats-container">
+              <div class="stat-box">📚 Số môn học: 6</div>
+              <div class="stat-box">📝 Số bài tập: 24</div>
+              <div class="stat-box">⭐ Điểm trung bình: 8.2</div>
+              <div class="stat-box">🏅 Tín chỉ tích lũy: 18</div>
+            </div>
+          </div>
+
+          <div class="right-col">
+            <div class="selected-panel">
+              <h3>MÔN HỌC ĐANG CHỌN</h3>
+              <p>Tên môn học: <strong id="selected-name">...</strong></p>
+              <p>Tiến độ: <strong id="selected-progress">...</strong></p>
+            </div>
+          </div>
+        </main>
+
+        <footer class="footer">
+          <p>
+            MSSV: <span id="display-mssv">[MSSV của bạn]</span> | Họ tên: [Họ
+            tên của bạn] | Ngày thi: 08/06/2026
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
